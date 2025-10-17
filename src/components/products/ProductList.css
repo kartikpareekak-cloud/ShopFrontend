@@ -1,0 +1,369 @@
+/* Products Page Styles */
+.products-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Products Header */
+.products-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.products-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.products-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  font-weight: 400;
+}
+
+/* Products Controls */
+.products-controls {
+  margin-bottom: 2rem;
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Category Filter */
+.category-filter {
+  margin-bottom: 1.5rem;
+}
+
+.category-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.category-pill {
+  padding: 0.625rem 1.25rem;
+  border: 2px solid #E0E0E0;
+  background: white;
+  color: #666;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
+  font-size: 0.95rem;
+  min-height: 44px;
+}
+
+.category-pill:hover {
+  border-color: #00796B;
+  color: #00796B;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 121, 107, 0.15);
+}
+
+.category-pill.active {
+  background: linear-gradient(135deg, #00796B 0%, #004D40 100%);
+  color: white;
+  border-color: #00796B;
+  box-shadow: 0 4px 16px rgba(0, 121, 107, 0.25);
+}
+
+/* Search and Sort Row */
+.search-sort-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Search Box */
+.search-box {
+  flex: 1;
+  min-width: 250px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  font-size: 1.2rem;
+  color: #999;
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.875rem 3rem 0.875rem 3rem;
+  border: 2px solid #E0E0E0;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+  min-height: 48px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #00796B;
+  box-shadow: 0 0 0 4px rgba(0, 121, 107, 0.1);
+}
+
+.search-clear {
+  position: absolute;
+  right: 1rem;
+  background: #999;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+.search-clear:hover {
+  background: #666;
+  transform: scale(1.1);
+}
+
+/* Sort Box */
+.sort-box {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  border: 2px solid #E0E0E0;
+  transition: all 0.3s ease;
+}
+
+.sort-box:focus-within {
+  border-color: #00796B;
+  box-shadow: 0 0 0 4px rgba(0, 121, 107, 0.1);
+}
+
+.sort-label {
+  font-weight: 500;
+  color: #666;
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+.sort-select {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  background: transparent;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #00796B;
+  cursor: pointer;
+  outline: none;
+  min-height: 36px;
+}
+
+.sort-select:focus {
+  outline: none;
+}
+
+/* Results Count */
+.results-count {
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.results-count strong {
+  color: #00796B;
+  font-weight: 600;
+}
+
+/* No Products State */
+.no-products {
+  text-align: center;
+  padding: 4rem 2rem;
+  animation: fadeIn 0.6s ease-out;
+}
+
+.no-products-icon {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.5;
+}
+
+.no-products h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.no-products p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+.clear-filters-btn {
+  padding: 0.875rem 2rem;
+  background: #00796B;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 48px;
+}
+
+.clear-filters-btn:hover {
+  background: #004D40;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 121, 107, 0.3);
+}
+
+/* Product Grid - Enhanced */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .products-page {
+    padding: 1.5rem;
+  }
+
+  .products-title {
+    font-size: 2.2rem;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-page {
+    padding: 1rem;
+  }
+
+  .products-header {
+    margin-bottom: 2rem;
+  }
+
+  .products-title {
+    font-size: 1.8rem;
+  }
+
+  .products-subtitle {
+    font-size: 1rem;
+  }
+
+  .category-pills {
+    gap: 0.5rem;
+  }
+
+  .category-pill {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .search-sort-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-box,
+  .sort-box {
+    width: 100%;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .no-products {
+    padding: 3rem 1rem;
+  }
+
+  .no-products-icon {
+    font-size: 4rem;
+  }
+
+  .no-products h2 {
+    font-size: 1.5rem;
+  }
+
+  .no-products p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-title {
+    font-size: 1.5rem;
+  }
+
+  .products-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .category-pills {
+    justify-content: flex-start;
+  }
+
+  .category-pill {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.875rem;
+  }
+
+  .search-input {
+    font-size: 0.9rem;
+    padding: 0.75rem 2.75rem 0.75rem 2.75rem;
+  }
+
+  .sort-label {
+    font-size: 0.85rem;
+  }
+
+  .sort-select {
+    font-size: 0.85rem;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .no-products-icon {
+    font-size: 3rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

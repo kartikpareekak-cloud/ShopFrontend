@@ -1,0 +1,155 @@
+/* Checkout Container */
+.checkout-container {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.checkout-content {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 40px;
+}
+
+.checkout-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 32px;
+}
+
+/* Form Section */
+.checkout-form-section {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.checkout-form h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+  margin: 8px 0 16px 0;
+}
+
+.checkout-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Payment Info */
+.checkout-payment-info {
+  border-top: 2px solid #e0e0e0;
+  padding-top: 24px;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border: 2px solid #00796B;
+  border-radius: 8px;
+  background-color: #e0f2f1;
+  margin: 16px 0;
+}
+
+.payment-method input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.payment-method label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  cursor: pointer;
+}
+
+.payment-note {
+  font-size: 14px;
+  color: #666666;
+  margin: 8px 0 0 0;
+}
+
+/* Form Actions */
+.checkout-form-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  padding-top: 24px;
+  border-top: 2px solid #e0e0e0;
+}
+
+.checkout-form-actions button {
+  flex: 1;
+}
+
+/* Empty State */
+.checkout-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  gap: 24px;
+  text-align: center;
+}
+
+.checkout-empty h2 {
+  font-size: 28px;
+  color: #333333;
+}
+
+.checkout-empty p {
+  font-size: 16px;
+  color: #666666;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .checkout-content {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout-summary-section {
+    order: -1; /* Show summary first on mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .checkout-container {
+    margin: 20px auto;
+    padding: 0 16px;
+  }
+
+  .checkout-form-section {
+    padding: 20px;
+  }
+
+  .checkout-title {
+    font-size: 24px;
+  }
+
+  .checkout-form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .checkout-form-actions {
+    flex-direction: column;
+  }
+
+  .checkout-form-actions button {
+    width: 100%;
+  }
+}
